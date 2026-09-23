@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "outputs/NIR98/experimental_code/validate_v13_1_package.py", line 91, in <module>
+    if __name__=='__main__': main()
+  File "outputs/NIR98/experimental_code/validate_v13_1_package.py", line 43, in main
+    if blockers: raise RuntimeError('STRICT_SUBMISSION_METADATA_FAILED: '+'; '.join(blockers))
+RuntimeError: STRICT_SUBMISSION_METADATA_FAILED: sample provenance/source_group is not verified complete; reference chemistry method metadata are incomplete
