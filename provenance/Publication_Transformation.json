@@ -1,0 +1,558 @@
+{
+  "status": "publication derivative of a previously completed frozen formal run",
+  "original_framework_version": "13.2.0-98",
+  "transformation_date": "2026-10-13",
+  "scientific_claim": "Comments and docstrings were removed; input workbook language and file references were translated. Numerical source inputs and frozen result tables were not changed. Historical formal-run receipts retain their original code hashes and were not re-signed.",
+  "regression_test_correction": "The independent-sample test assertion for sample 202512-06142 was corrected from the obsolete 9.24 to the frozen reference value 9.20. Training inputs and stored results retain 9.20.",
+  "files": [
+    {
+      "original_path": "01_check.bat",
+      "public_path": "01_check.bat",
+      "original_sha256": "a871ff4550a5c5acde0f6cb2d71797410b8fccf8e7e48e9dbf4551afd6f332e5",
+      "public_sha256": "a871ff4550a5c5acde0f6cb2d71797410b8fccf8e7e48e9dbf4551afd6f332e5",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "02_smoke.bat",
+      "public_path": "02_smoke.bat",
+      "original_sha256": "b429abb5cdad038bcd72278c2bc0c8c2cbc0ee11f88657e6b6383f2e5f339fda",
+      "public_sha256": "b429abb5cdad038bcd72278c2bc0c8c2cbc0ee11f88657e6b6383f2e5f339fda",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "03_formal.bat",
+      "public_path": "03_formal.bat",
+      "original_sha256": "cee49730405ddd65350b86548abf7b6a1ba35838d975c22c1cc2cc21e9353d24",
+      "public_sha256": "cee49730405ddd65350b86548abf7b6a1ba35838d975c22c1cc2cc21e9353d24",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "CITATION_REFERENCES.csv",
+      "public_path": "CITATION_REFERENCES.csv",
+      "original_sha256": "ceb584a8a0491d832edb511a52d7243f00bbf18b5fadc3375a0fb86cd1dfa0ba",
+      "public_sha256": "ceb584a8a0491d832edb511a52d7243f00bbf18b5fadc3375a0fb86cd1dfa0ba",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "experimental_code/sorghum_v13_1_frozen.py",
+      "public_path": "experimental_code/sorghum_v13_1_frozen.py",
+      "original_sha256": "05dae4c06f7194b2e1bd45f678cd50d91780fef0e03ee62041e0b39c153c9078",
+      "public_sha256": "e584ec641d5556564b57602e48184754dd06e4de1375033a970a4023661eb37c",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "fb8f9eeda08f5d320c3687ae5dcd232f035cdcf0d180b9b4208e2d07e925826a",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "experimental_code/sorghum_v13_data_utils.py",
+      "public_path": "experimental_code/sorghum_v13_data_utils.py",
+      "original_sha256": "90175bdec2f59251c7be4523cb1d265934b3cdc235e5cd04b9d275b342da7aeb",
+      "public_sha256": "027028c262c4ea3c92012605305a511d13c8da7ed0938dbe22011b3de4a27b75",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "b6983d5b94c54371140179a65b593691ee3a60d204f3d838f4cae3cd15143929",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "experimental_code/test_independent_samples.py",
+      "public_path": "experimental_code/test_independent_samples.py",
+      "original_sha256": "5c2928ea36032a9f09f683d73cec544988f7d8f5a19d32cbb280f3fe48528a9e",
+      "public_sha256": "d58e44c82722e591c755e6e8d4622c006e4085dc472f6141adeb502a76163ab2",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "ebe4ba8969da9ae7f1555436e06d2843ac0c7964be7c32136a4bb50fd59c50cc",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "experimental_code/v13_1_algorithm_selftest.py",
+      "public_path": "experimental_code/v13_1_algorithm_selftest.py",
+      "original_sha256": "48f31ce156dac92143d92e20cc7bafd465bcacf30ee9c615f6e74683930af6a6",
+      "public_sha256": "f8b5c6314b26d1bc2373d6cd0fb7366e16487e462c759994380660c9cebae622",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "23b8e36731a4c21e631548922573411d31f331671b3ad15ebd6df86abedced3e",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "experimental_code/v13_1_privileged_utility_analysis.py",
+      "public_path": "experimental_code/v13_1_privileged_utility_analysis.py",
+      "original_sha256": "7f857135662ecc64b78611a45100c6a33679b9ff97b8b2a2c9c2c748d781723b",
+      "public_sha256": "2636d1c5f9ad76071c2fd46db3fcea3f44ff9f0d0b0731dd26a40f56faa91192",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "8c6ab3f6c9a2af8b721537385dfbd476199848ebc51c98ccad82e6de264911db",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "experimental_code/v13_1_statistical_robustness.py",
+      "public_path": "experimental_code/v13_1_statistical_robustness.py",
+      "original_sha256": "a9ba6bbed73dcde4e74657889864bcc32e3bfd622328cf5bc933a24cd59c5445",
+      "public_sha256": "297ffbc1878e02da30ef58ee3befbefbfe460daa1bfc233bfb8539f87480405a",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "5959871c8172ac3558a09efa01123097de5a542a49d267611821c60a5cb826a3",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "experimental_code/validate_v13_1_package.py",
+      "public_path": "experimental_code/validate_v13_1_package.py",
+      "original_sha256": "c9ed30a078a7058243369d988cbc436628b4833bca7df3f2c6686175c7966726",
+      "public_sha256": "20f224f9c263edca8eb1a4db102a536ef78f7f5cff66a42e3ee00251e7a16506",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "79534cf1d944ef27012ea06d7053ba7c546329a17958fa8a7a0a3727a62b93da",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "experimental_code/validate_v13_1_results.py",
+      "public_path": "experimental_code/validate_v13_1_results.py",
+      "original_sha256": "4485bf0dd1bd14f197206cfe2574ed4cf6e40ae40daeb0b4ed6d1b4776f46b11",
+      "public_sha256": "19b9afffc7b3dd85b8d945ad0cae899ae5d98781c3f7df516f0f3367e3fa9798",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "20f1f269c161a536da7b408c5b0d2b90e772b736562d8a76e2dadd29650b860d",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "experimental_data/DATA_IMPORT_AUDIT.json",
+      "public_path": "experimental_data/DATA_IMPORT_AUDIT.json",
+      "original_sha256": "e839ca9b488af686c24febcb2491ad071a9282525b505247f87d458c13a6c9ab",
+      "public_sha256": "f89981f9d64dd7283b5b967f79b9bd95db753007661e24dd0cc33effdd23e2f0",
+      "transformation": "English descriptive metadata; historical source hashes retained"
+    },
+    {
+      "original_path": "experimental_data/FROZEN_DATA_HASHES.json",
+      "public_path": "experimental_data/FROZEN_DATA_HASHES.json",
+      "original_sha256": "5c6fa6e45c503877fd8712c1330aba5f389737ff252e78b3f5e93ae0e36ab939",
+      "public_sha256": "55f5abfc25ae434bcef5c26411e756b0f2bafac566dcccc2a4018cd25cf00778",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "experimental_data/ground_grain_replicate_spectra.csv.gz",
+      "public_path": "experimental_data/ground_grain_replicate_spectra.csv.gz",
+      "original_sha256": "4b635cd17821c22091d72eedb32605896f5cbe60f7605fabeb2b5f49b7608907",
+      "public_sha256": "4b635cd17821c22091d72eedb32605896f5cbe60f7605fabeb2b5f49b7608907",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "experimental_data/reference_chemistry.csv",
+      "public_path": "experimental_data/reference_chemistry.csv",
+      "original_sha256": "d712e25ebbdf6dcea8731e6f5042c65e0f2b37f6b342b4e7fab7ef7fa769307a",
+      "public_sha256": "d712e25ebbdf6dcea8731e6f5042c65e0f2b37f6b342b4e7fab7ef7fa769307a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "experimental_data/reference_method_metadata_template.csv",
+      "public_path": "experimental_data/reference_method_metadata_template.csv",
+      "original_sha256": "0323b8bc09c601a4bf4bf26ec30abc0761d5488f58ee8fb6d618c4a45f285fcf",
+      "public_sha256": "0323b8bc09c601a4bf4bf26ec30abc0761d5488f58ee8fb6d618c4a45f285fcf",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "experimental_data/sample_alignment.csv",
+      "public_path": "experimental_data/sample_alignment.csv",
+      "original_sha256": "3d20aa3281ea07d944b9000eb6716a4eb9ab7d52fb55c8f40abeb855982e99e8",
+      "public_sha256": "3d20aa3281ea07d944b9000eb6716a4eb9ab7d52fb55c8f40abeb855982e99e8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "experimental_data/sample_metadata_template.csv",
+      "public_path": "experimental_data/sample_metadata_template.csv",
+      "original_sha256": "c8bcfc1864bd07b62d4d08f85c31d68c48c8f9bddf67487ff2b74f5bfce60de9",
+      "public_sha256": "c8bcfc1864bd07b62d4d08f85c31d68c48c8f9bddf67487ff2b74f5bfce60de9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "experimental_data/whole_grain_replicate_spectra.csv.gz",
+      "public_path": "experimental_data/whole_grain_replicate_spectra.csv.gz",
+      "original_sha256": "5e50e62d80995292439cc9a9ce146170989fac41ba393d9b0eedcf4a2f356241",
+      "public_sha256": "5e50e62d80995292439cc9a9ce146170989fac41ba393d9b0eedcf4a2f356241",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "freeze_package.py",
+      "public_path": "freeze_package.py",
+      "original_sha256": "3bbcb95354cbe78274a4b5b7a5c748ed2012c38c8ffa92f03d1e620646eadab0",
+      "public_sha256": "ed9814da0b3446d681bdcd10b5cd122273c827bd9d4aa8b1dbf5c7e38a3a3752",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "4eb45d0be03b03607ee5f48af969253d1857b6690e1abce758ed7174c1ec406a",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "prepare_data.py",
+      "public_path": "prepare_data.py",
+      "original_sha256": "fe8f543576e5d222f530771ce0036f9eaeb27f9237ce1b82763c7e19ed1a0674",
+      "public_sha256": "764f22fbaa67f330bda36a754c220954dcb585f8e952aae4efc3dce6700c8bc5",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "771e5b8767505498225f2fbc4d266ba76128babb29393400ddf89e19ef04ba5a",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "requirements.txt",
+      "public_path": "requirements.txt",
+      "original_sha256": "caba9ab5b80316b2fe4e62b6c89924ef404950cdbe1c6b182b80e2962c469f0a",
+      "public_sha256": "caba9ab5b80316b2fe4e62b6c89924ef404950cdbe1c6b182b80e2962c469f0a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "RUN_CONFIG_V13_1.json",
+      "public_path": "RUN_CONFIG_V13_1.json",
+      "original_sha256": "0f6bd2c32ae9ed2638fb600bb150c59a5ab6fe6ec387b07f126fe3d74eb8e681",
+      "public_sha256": "0f6bd2c32ae9ed2638fb600bb150c59a5ab6fe6ec387b07f126fe3d74eb8e681",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "run_v13_1_algorithm_selftest.bat",
+      "public_path": "run_v13_1_algorithm_selftest.bat",
+      "original_sha256": "c55985175c80e6ad99ab6751ec8879ae30a3cf8a9d448b1883b67c3da7c7ff67",
+      "public_sha256": "c55985175c80e6ad99ab6751ec8879ae30a3cf8a9d448b1883b67c3da7c7ff67",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "run_v13_1_algorithm_selftest.py",
+      "public_path": "run_v13_1_algorithm_selftest.py",
+      "original_sha256": "c0abd650afb1e9bf214c55f8ded629c4a05d3dd11e4c614cb1b35de0f9229f81",
+      "public_sha256": "3d939576dd4dd1d78975efe8d24b395a8d1beac4e4692b3f256a8b76ce352f56",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "3b42753d152ae6b3cb61e688335b2df7841f482b4e2932f0a9104732c9f70d7e",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "run_v13_1_analysis.py",
+      "public_path": "run_v13_1_analysis.py",
+      "original_sha256": "62e3c8cf45a286cce2f08703851908fa9f214252f10216625a3dcdff4a01ce11",
+      "public_sha256": "e05371f08f657e37c75810bbfbb19fe0350d85e0637be645a4b1eab6de40a578",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "9649642ef033ef3fdcba55ef8214117af6dae7f09b1b172ef019f432d667e54a",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "run_v13_1_analysis_all_targets.bat",
+      "public_path": "run_v13_1_analysis_all_targets.bat",
+      "original_sha256": "a21a65ab97d7a6faa10cdcde312a3729df136cfc7e17793875a32c30cc02aedf",
+      "public_sha256": "a21a65ab97d7a6faa10cdcde312a3729df136cfc7e17793875a32c30cc02aedf",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "run_v13_1_analysis_primary.bat",
+      "public_path": "run_v13_1_analysis_primary.bat",
+      "original_sha256": "0e49c0a5fbba7463ee4f355abb5092fa017a84f1f6fbf01c0c839877b2bfd48e",
+      "public_sha256": "0e49c0a5fbba7463ee4f355abb5092fa017a84f1f6fbf01c0c839877b2bfd48e",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "run_v13_1_analysis_primary.py",
+      "public_path": "run_v13_1_analysis_primary.py",
+      "original_sha256": "15f264132eb301e4337da1f50862329d25e714ecef0333317a4d40132c4fbe64",
+      "public_sha256": "d2c6cb8224612f37ddc816d35ecb3b4912c53e8a3ae34195a7c29520ab340365",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "2821d8c49724a70e8136103ef6c40b11cbd345c914dad985d868fa0ab6ea6bd8",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "run_v13_1_smoke_test.bat",
+      "public_path": "run_v13_1_smoke_test.bat",
+      "original_sha256": "4953847655f63796680421d79cea81bf898c0b8c22cc6906487f28b0c675c3dc",
+      "public_sha256": "4953847655f63796680421d79cea81bf898c0b8c22cc6906487f28b0c675c3dc",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "run_v13_1_smoke_test.py",
+      "public_path": "run_v13_1_smoke_test.py",
+      "original_sha256": "5b1a06e9791913b5f8fb8fd43039900eaca2b0827d61eabbf9d45a322625bdc3",
+      "public_sha256": "b73bdfffcf011a5ab0877b8e2ea6583cf04818f16dc96b62d994a5746ea65c3f",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "a6b688233dd3af1bc721df0682c59a8e09b945e5c7890a99d8c2b3766019adc7",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "run_v13_1_submission_readiness.bat",
+      "public_path": "run_v13_1_submission_readiness.bat",
+      "original_sha256": "bd24f0ca148a557a5cadb6bed4a4ced96bf2e6c9d28834a0b740445f3185a241",
+      "public_sha256": "bd24f0ca148a557a5cadb6bed4a4ced96bf2e6c9d28834a0b740445f3185a241",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "run_v13_1_submission_readiness.py",
+      "public_path": "run_v13_1_submission_readiness.py",
+      "original_sha256": "abd074eba2548ce6a792704489fded77f958d9946fc0846bd796a3845c373a9e",
+      "public_sha256": "d7d64e46ebe0525f47a8cf610e89d857bd1bc4c00f9df089f1effc7d217b13e4",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "b639735f1a94c0f3296038e9efb451a515b55eafb8b07f911c9bfd10122c008d",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "run_v13_1_validate.bat",
+      "public_path": "run_v13_1_validate.bat",
+      "original_sha256": "4f9aeeedcb5f7f6467449f86fbe00a4ccc7d8cc04a2de5c0c253f920539d7fcf",
+      "public_sha256": "4f9aeeedcb5f7f6467449f86fbe00a4ccc7d8cc04a2de5c0c253f920539d7fcf",
+      "transformation": "batch comments removed"
+    },
+    {
+      "original_path": "run_v13_1_validate.py",
+      "public_path": "run_v13_1_validate.py",
+      "original_sha256": "6c72d627b236f8a658f4485bd42431840f0a6fc86fbb50774eb2c8f86ec4962e",
+      "public_sha256": "ced89fe3de5881961f1e62b2d3c49759d568bebdcbccfb0ebbe20a5418f6a761",
+      "transformation": "comments and docstrings removed; English workbook references",
+      "normalized_executable_ast_sha256": "1e575585eb9de4d06542831f57ae9a1d1402ed34eee54c28777540d0b5e51232",
+      "scientific_executable_ast_preserved": true
+    },
+    {
+      "original_path": "v13_2_results/00_audit/elasticnet_inner_cv_convergence_audit.csv.gz",
+      "public_path": "v13_2_results/00_audit/elasticnet_inner_cv_convergence_audit.csv.gz",
+      "original_sha256": "878ef37bacc4f877dbdf939335c0b0356c5415431c24917726b1762cf7a997fc",
+      "public_sha256": "878ef37bacc4f877dbdf939335c0b0356c5415431c24917726b1762cf7a997fc",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/00_audit/elasticnet_selected_and_family_fit_audit.csv",
+      "public_path": "v13_2_results/00_audit/elasticnet_selected_and_family_fit_audit.csv",
+      "original_sha256": "55644f8e55f1a194be8ec030885ac2a030c986002c91ef9be8440fbbc43a65ea",
+      "public_sha256": "55644f8e55f1a194be8ec030885ac2a030c986002c91ef9be8440fbbc43a65ea",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/00_audit/formal_run_freeze_receipt.json",
+      "public_path": "v13_2_results/00_audit/formal_run_freeze_receipt.json",
+      "original_sha256": "d0115e3897bac186f27ddf33d71c73051140ef012943f594cc94bd25900094d7",
+      "public_sha256": "d0115e3897bac186f27ddf33d71c73051140ef012943f594cc94bd25900094d7",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/00_audit/model_space_fairness_audit.json",
+      "public_path": "v13_2_results/00_audit/model_space_fairness_audit.json",
+      "original_sha256": "2f21d6eb072825f4c0e0ea44150c943639b2927eb26d785ddc389d8cb6aaf98a",
+      "public_sha256": "2f21d6eb072825f4c0e0ea44150c943639b2927eb26d785ddc389d8cb6aaf98a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/00_audit/numerical_convergence_summary.json",
+      "public_path": "v13_2_results/00_audit/numerical_convergence_summary.json",
+      "original_sha256": "022d262cdb8e4b26fc66d22cbaa0e5655df28fb4c77c279951704832ac004a63",
+      "public_sha256": "022d262cdb8e4b26fc66d22cbaa0e5655df28fb4c77c279951704832ac004a63",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/00_audit/reference_method_metadata_audit.json",
+      "public_path": "v13_2_results/00_audit/reference_method_metadata_audit.json",
+      "original_sha256": "58380b9cb2fa9d1f0d8035399423a18fc48130cc0e9aef119f7e0b348e35f734",
+      "public_sha256": "58380b9cb2fa9d1f0d8035399423a18fc48130cc0e9aef119f7e0b348e35f734",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/00_audit/run_manifest.json",
+      "public_path": "v13_2_results/00_audit/run_manifest.json",
+      "original_sha256": "1eaeaffbe4b1927f1fe73068124e337d29021551119f289abbe0b5b855abe45d",
+      "public_sha256": "1eaeaffbe4b1927f1fe73068124e337d29021551119f289abbe0b5b855abe45d",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/00_audit/sample_provenance_audit.json",
+      "public_path": "v13_2_results/00_audit/sample_provenance_audit.json",
+      "original_sha256": "dbfd6edc6f416d9154a46055c1737fe0d75d905b848f70134dbb6151547611ee",
+      "public_sha256": "dbfd6edc6f416d9154a46055c1737fe0d75d905b848f70134dbb6151547611ee",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/01_predictions/all_targets_outer_oof_predictions.csv",
+      "public_path": "v13_2_results/01_predictions/all_targets_outer_oof_predictions.csv",
+      "original_sha256": "a21093e0d9c88a2f4e948e42d8189aa8e5c3156d9fcf607feaa0261f19c07376",
+      "public_sha256": "a21093e0d9c88a2f4e948e42d8189aa8e5c3156d9fcf607feaa0261f19c07376",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/02_selection/inner_cv_candidate_trace.csv.gz",
+      "public_path": "v13_2_results/02_selection/inner_cv_candidate_trace.csv.gz",
+      "original_sha256": "f4396956e40c678a2c947c2184c0cbf7b7f233185080cd8a14f83152686db85f",
+      "public_sha256": "f4396956e40c678a2c947c2184c0cbf7b7f233185080cd8a14f83152686db85f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/02_selection/outer_fold_selected_workflows.csv",
+      "public_path": "v13_2_results/02_selection/outer_fold_selected_workflows.csv",
+      "original_sha256": "57b08824da974a893fe9e5f5f77c9a059e0caeca09d5f2d49667e04a2c36969c",
+      "public_sha256": "57b08824da974a893fe9e5f5f77c9a059e0caeca09d5f2d49667e04a2c36969c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/02_selection/outer_test_split_manifest.csv",
+      "public_path": "v13_2_results/02_selection/outer_test_split_manifest.csv",
+      "original_sha256": "fb24ef88bba87a9abe80672f70896a41658774001718b0ed404fdbf004490418",
+      "public_sha256": "fb24ef88bba87a9abe80672f70896a41658774001718b0ed404fdbf004490418",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/02_selection/representation_screening_trace.csv",
+      "public_path": "v13_2_results/02_selection/representation_screening_trace.csv",
+      "original_sha256": "5049d455b1fca7822dea4d97579a8642f45f0a8e08a6bdd7dad59380c0688ecb",
+      "public_sha256": "5049d455b1fca7822dea4d97579a8642f45f0a8e08a6bdd7dad59380c0688ecb",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/03_performance/method_performance_summary.csv",
+      "public_path": "v13_2_results/03_performance/method_performance_summary.csv",
+      "original_sha256": "50f9d1479d8498b55e9df64adb06b381889f265c5c3211d9f46d3f3c4da31577",
+      "public_sha256": "50f9d1479d8498b55e9df64adb06b381889f265c5c3211d9f46d3f3c4da31577",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/03_performance/nested_method_selection_frequency.csv",
+      "public_path": "v13_2_results/03_performance/nested_method_selection_frequency.csv",
+      "original_sha256": "704662e32772eb782d47f66adc1b47f0a54a7ac18b7a960727a54ee1eed8d596",
+      "public_sha256": "704662e32772eb782d47f66adc1b47f0a54a7ac18b7a960727a54ee1eed8d596",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/03_performance/outer_repeat_performance.csv",
+      "public_path": "v13_2_results/03_performance/outer_repeat_performance.csv",
+      "original_sha256": "fea4abc05ac96619698794276758d12620e723d8cbe1432d7fdb13ce8530397f",
+      "public_sha256": "fea4abc05ac96619698794276758d12620e723d8cbe1432d7fdb13ce8530397f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/04_inference/ground_assisted_vs_strong_whole_cluster_bootstrap.csv",
+      "public_path": "v13_2_results/04_inference/ground_assisted_vs_strong_whole_cluster_bootstrap.csv",
+      "original_sha256": "d5f057b97e0f4345a3777276c93dc993ab059234a4de1e019b3ebe1982002bda",
+      "public_sha256": "d5f057b97e0f4345a3777276c93dc993ab059234a4de1e019b3ebe1982002bda",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/04_inference/ground_assisted_vs_strong_whole_signflip.csv",
+      "public_path": "v13_2_results/04_inference/ground_assisted_vs_strong_whole_signflip.csv",
+      "original_sha256": "44e7d277173f19ff575661828ff2e0715c317e56cd875930468543c0cc8d591e",
+      "public_sha256": "44e7d277173f19ff575661828ff2e0715c317e56cd875930468543c0cc8d591e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/05_utility_boundary/selective_grinding_cost_performance_summary.csv",
+      "public_path": "v13_2_results/05_utility_boundary/selective_grinding_cost_performance_summary.csv",
+      "original_sha256": "9eef9b672e0076122841d0f21d7a3e4f7c3d3ae510a9013a600578a5651af5fa",
+      "public_sha256": "9eef9b672e0076122841d0f21d7a3e4f7c3d3ae510a9013a600578a5651af5fa",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/05_utility_boundary/selective_grinding_repeat_performance.csv",
+      "public_path": "v13_2_results/05_utility_boundary/selective_grinding_repeat_performance.csv",
+      "original_sha256": "c467ffdb96d2e0e47e3c72d48a4d8b511d9e9240fcad7825f2bf0b40559d87cd",
+      "public_sha256": "c467ffdb96d2e0e47e3c72d48a4d8b511d9e9240fcad7825f2bf0b40559d87cd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/05_utility_boundary/selective_grinding_sample_decisions.csv.gz",
+      "public_path": "v13_2_results/05_utility_boundary/selective_grinding_sample_decisions.csv.gz",
+      "original_sha256": "0850f0461fc8120b16a1812edaf598b404be0f861847007fa9550686bf2f7ce4",
+      "public_sha256": "0850f0461fc8120b16a1812edaf598b404be0f861847007fa9550686bf2f7ce4",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/05_utility_boundary/trait_privileged_incremental_value.csv",
+      "public_path": "v13_2_results/05_utility_boundary/trait_privileged_incremental_value.csv",
+      "original_sha256": "fcf1e21aa2c3f49d0fe85ef41f14298d0e2556aa475e9f3386bd31de9702cad6",
+      "public_sha256": "fcf1e21aa2c3f49d0fe85ef41f14298d0e2556aa475e9f3386bd31de9702cad6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/05_utility_boundary/uncertainty_validity_summary.csv",
+      "public_path": "v13_2_results/05_utility_boundary/uncertainty_validity_summary.csv",
+      "original_sha256": "c21ba94dfeecde811f7612f4111a6573a51ad4175ce9fa345007f20cdf1361b6",
+      "public_sha256": "c21ba94dfeecde811f7612f4111a6573a51ad4175ce9fa345007f20cdf1361b6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/05_utility_boundary/UTILITY_BOUNDARY_SUMMARY.json",
+      "public_path": "v13_2_results/05_utility_boundary/UTILITY_BOUNDARY_SUMMARY.json",
+      "original_sha256": "9c2bd51a223c62ab852aea558734d509c468f9cda3b947a7da75cfdff73eca76",
+      "public_sha256": "9c2bd51a223c62ab852aea558734d509c468f9cda3b947a7da75cfdff73eca76",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/06_robustness/corrected_repeated_cv_sensitivity.csv",
+      "public_path": "v13_2_results/06_robustness/corrected_repeated_cv_sensitivity.csv",
+      "original_sha256": "2c1cb7c0075b3f19560d78ba0c58c2562f3ccba4f68200c2e1d4453745887753",
+      "public_sha256": "2c1cb7c0075b3f19560d78ba0c58c2562f3ccba4f68200c2e1d4453745887753",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/06_robustness/practical_gain_sensitivity.csv",
+      "public_path": "v13_2_results/06_robustness/practical_gain_sensitivity.csv",
+      "original_sha256": "562ac7742db1ff2bbc61550eda72b76a34a165d71a50d072cf5bdefe9b42bed6",
+      "public_sha256": "562ac7742db1ff2bbc61550eda72b76a34a165d71a50d072cf5bdefe9b42bed6",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/06_robustness/primary_protein_oof_label_permutation_null.csv.gz",
+      "public_path": "v13_2_results/06_robustness/primary_protein_oof_label_permutation_null.csv.gz",
+      "original_sha256": "1bc10e6603a7f86c04fdca15725a052ad44fbd5ec66339b96b559374e8b5c777",
+      "public_sha256": "1bc10e6603a7f86c04fdca15725a052ad44fbd5ec66339b96b559374e8b5c777",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/06_robustness/primary_protein_oof_label_permutation_summary.json",
+      "public_path": "v13_2_results/06_robustness/primary_protein_oof_label_permutation_summary.json",
+      "original_sha256": "848a343ac888393fe368f7e5be9f29b4c5489ea1c80f2597fa769f17ce56819e",
+      "public_sha256": "848a343ac888393fe368f7e5be9f29b4c5489ea1c80f2597fa769f17ce56819e",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/06_robustness/ROBUSTNESS_SUMMARY.json",
+      "public_path": "v13_2_results/06_robustness/ROBUSTNESS_SUMMARY.json",
+      "original_sha256": "7d3461410e2fba4228b34bcae4370c138f47957a25a029b0bc72aebedeebf574",
+      "public_sha256": "7d3461410e2fba4228b34bcae4370c138f47957a25a029b0bc72aebedeebf574",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/06_robustness/selective_grinding_vs_random_inference.csv",
+      "public_path": "v13_2_results/06_robustness/selective_grinding_vs_random_inference.csv",
+      "original_sha256": "e4f7a57a02b83e5d7a8e16b83acc646280b398ae70d729a2b406a37cb770da90",
+      "public_sha256": "e4f7a57a02b83e5d7a8e16b83acc646280b398ae70d729a2b406a37cb770da90",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/06_robustness/technical_replicate_status.json",
+      "public_path": "v13_2_results/06_robustness/technical_replicate_status.json",
+      "original_sha256": "13f4980bbbb427c7c755c94c0dcbdb058c85b0e32ad0d1c6426611793c24f117",
+      "public_sha256": "13f4980bbbb427c7c755c94c0dcbdb058c85b0e32ad0d1c6426611793c24f117",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "v13_2_results/ANALYSIS_SUMMARY.json",
+      "public_path": "v13_2_results/ANALYSIS_SUMMARY.json",
+      "original_sha256": "1671aa1e76dec149c54f389d1066ff9640b00ea86461477c0c0e5ce638015a52",
+      "public_sha256": "1671aa1e76dec149c54f389d1066ff9640b00ea86461477c0c0e5ce638015a52",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "original_path": "raw_inputs/Sorghum_LiHua.xls",
+      "public_path": "raw_inputs/reference_chemistry_raw.xlsx",
+      "original_sha256": "ef31a9c95d5884a73e6c8862d8167ab8dec8224e6c3d63dc7016578d2bf38cae",
+      "public_sha256": "a03f5074860cf8d9e7e1ea7af2f1a4ba6771d85105289c03c6caec825d0974f9",
+      "transformation": "English headers and worksheet names; XLS chemistry exported as XLSX; all sample IDs, numeric values and row ordering retained; default theme font names changed to English"
+    },
+    {
+      "original_path": "raw_inputs/Sorghum_NIR.xlsx",
+      "public_path": "raw_inputs/paired_spectra_raw.xlsx",
+      "original_sha256": "90dc6ebbbf86861b38ad06ef84befbc9b6399dcd9e852171f93dc2af89d80266",
+      "public_sha256": "8c2f58da6696fadb8bff4ff931f350f938c6e4c9e448f528ef0089e2cf71fa06",
+      "transformation": "English headers and worksheet names; XLS chemistry exported as XLSX; all sample IDs, numeric values and row ordering retained"
+    },
+    {
+      "original_path": "manuscript_embedded_image_1",
+      "public_path": "figures/Figure_01/Figure_01.png",
+      "original_sha256": "640eb43f01e809dbe5461fdb146b1dd3047873d46b399b0679b464b5ba5c4a0a",
+      "public_sha256": "640eb43f01e809dbe5461fdb146b1dd3047873d46b399b0679b464b5ba5c4a0a",
+      "transformation": "Byte-identical authoritative uploaded-manuscript image",
+      "editorial_export_png_match": true
+    },
+    {
+      "original_path": "manuscript_embedded_image_2",
+      "public_path": "figures/Figure_02/Figure_02.png",
+      "original_sha256": "a514ecf635cccb47679cb2d287a61775be64931e8725b7f457ba4054efedf5a4",
+      "public_sha256": "a514ecf635cccb47679cb2d287a61775be64931e8725b7f457ba4054efedf5a4",
+      "transformation": "Byte-identical authoritative uploaded-manuscript image",
+      "editorial_export_png_match": true
+    },
+    {
+      "original_path": "manuscript_embedded_image_3",
+      "public_path": "figures/Figure_03/Figure_03.png",
+      "original_sha256": "30bdde8d178d1b8db27cbd17331c94e1c833f82c47485b15cd572a3c4afae7a6",
+      "public_sha256": "30bdde8d178d1b8db27cbd17331c94e1c833f82c47485b15cd572a3c4afae7a6",
+      "transformation": "Byte-identical authoritative uploaded-manuscript image",
+      "editorial_export_png_match": true
+    }
+  ],
+  "english_workbook_theme_font_updates": [
+    "raw_inputs/reference_chemistry_raw.xlsx"
+  ]
+}
