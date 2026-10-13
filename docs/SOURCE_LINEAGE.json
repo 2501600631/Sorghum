@@ -1,9 +1,0 @@
-{
-  "source_package": "Sorghum_NIR_V13_1_2_FINAL_FROZEN_BEFORE_FORMAL_RUN2 (2).zip",
-  "source_package_sha256": "6043c81163b8b8eb65340680ea9c01eacb8d9a30d7229bf6e59d0a3c04017431",
-  "source_framework": "13.1.2",
-  "new_framework": "13.2.0-98",
-  "source_results_reused": false,
-  "formal_run_performed": false,
-  "user_declared_independent_samples": 98
-}
