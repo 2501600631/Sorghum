@@ -1,6 +1,6 @@
 # Sorghum near-infrared spectroscopy: 98 paired samples
 
-This repository accompanies the LWT manuscript on whole-grain prediction, ground-sample prediction, ground-assisted calibration, and retrospective selective grinding. It contains the experimental inputs, reproducible analysis, frozen formal results, and the source data and Python program for each figure. It was prepared for the existing Sorghum repository; this local package has not been uploaded or assigned a DOI.
+This repository accompanies the LWT manuscript on whole-grain prediction, ground-sample prediction, ground-assisted calibration, and retrospective selective grinding. It contains the experimental inputs, reproducible analysis, frozen formal results, and the source data and Python program for each figure. 
 
 ## Study and data
 
