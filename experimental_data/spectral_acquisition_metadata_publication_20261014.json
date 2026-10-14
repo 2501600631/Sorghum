@@ -1,0 +1,64 @@
+{
+  "metadata_version": "13.2.0-98-publication-2026-10-14-v3",
+  "confirmation_date": "2026-10-14",
+  "confirmation_source": "author correction of original experimental records for the 98 measured samples",
+  "independent_samples": 98,
+  "instrument_model": "NIRS DS2500",
+  "manufacturer": "FOSS Analytical A/S",
+  "manufacturer_location": "Denmark",
+  "measurement_mode": "diffuse reflectance",
+  "storage_temperature_C": -15,
+  "warming_environment_range_C": [
+    20,
+    25
+  ],
+  "warming_procedure": "allow the original sealed package to reach room temperature with no external condensation before opening; avoid repeated opening and freeze-thaw cycles",
+  "measurement_sequence": [
+    "mixed whole grains",
+    "representative ground portion of the same sample"
+  ],
+  "whole_grain_sample_cup": "instrument-compatible rotating diffuse-reflectance cup",
+  "grinder_type": "laboratory high-speed grinder",
+  "ground_sieve_mesh": 40,
+  "ground_sieve_aperture_mm": 0.425,
+  "sieve_procedure": "regrind all retained material until the entire portion passes; discard no component",
+  "grinding_temperature_control": "control temperature rise and moisture loss; mix and promptly seal the powder; measure after temperature stabilises",
+  "sample_cup_filling": "fully cover the measurement window with optically opaque sample depth, consistent filling height and packing; naturally level without deliberate compression",
+  "sample_cup_cleaning": "clean thoroughly between samples",
+  "instrument_checks": [
+    "warm-up",
+    "wavelength accuracy",
+    "photometric performance",
+    "reference correction with the instrument internal high-reflectance standard",
+    "instrument-state checks between measurement batches"
+  ],
+  "wavelength_start_nm": 400.0,
+  "wavelength_end_nm": 2499.5,
+  "wavelength_sampling_interval_nm": 0.5,
+  "wavelength_variables": 4200,
+  "internal_subscans_per_measurement": 32,
+  "independent_repackings_per_sample_per_form": 2,
+  "exported_spectra_per_sample_per_form": 1,
+  "aggregation": "wavelength-wise arithmetic mean of the two independently repacked, internally averaged spectra",
+  "exported_spectral_scale": "apparent absorbance",
+  "apparent_absorbance_equation": "A(lambda) = log10(1 / R(lambda))",
+  "reflectance_definition": "dimensionless corrected diffuse reflectance relative to the instrument reference, represented as a fraction",
+  "reflectance_fraction_range": [
+    0,
+    1
+  ],
+  "chemometric_preprocessing_before_export": [],
+  "legacy_replicate_column_meaning": "single exported mean-spectrum record index; value 1 does not count the underlying acquisition repackings",
+  "available_modelling_export_identifiers": [
+    "sample_id",
+    "presentation",
+    "wavelength"
+  ],
+  "individual_repacking_spectra_in_archive": false,
+  "acquisition_batch_identifiers_in_modelling_archive": false,
+  "modelling_grid_interval_nm": 2.0,
+  "modelling_grid_end_nm": 2498.0,
+  "modelling_grid_variables": 1050,
+  "previous_sieve_description_superseded": "10 mesh",
+  "raw_export_values_changed": false
+}
