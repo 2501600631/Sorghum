@@ -1,0 +1,25 @@
+{
+  "framework_version": "13.2.0-98",
+  "status": "completed",
+  "practical_gain_sensitivity_margins_pct": [
+    2.5,
+    5.0,
+    10.0
+  ],
+  "selective_grinding_primary_exploratory_budgets": [
+    0.1,
+    0.2
+  ],
+  "selective_grinding_selection_scope": "within_outer_fold",
+  "sample_or_source_group_cluster_bootstrap_repeats": 2000,
+  "cluster_signflip_repeats": 20000,
+  "primary_oof_label_permutations_requested": 20000,
+  "corrected_repeated_cv_sensitivity": true,
+  "external_validation_performed": false,
+  "guardrails": [
+    "Practical-gain margins are sensitivity thresholds, not assay-derived equivalence margins.",
+    "Selective-grinding inference is retrospective OOF policy evidence, not deployment validation.",
+    "Corrected repeated-CV inference is supplemental development-cohort sensitivity evidence.",
+    "OOF label permutation does not retrain the full pipeline and is not full Y-randomization."
+  ]
+}
