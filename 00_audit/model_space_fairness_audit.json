@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "framework_version": "13.2.0-98",
+  "core_script_version": "13.2.0-98-final-methodological-hardening",
+  "profile": "publication",
+  "common_representation_space_count": 30,
+  "whole_representation_space_count": 30,
+  "transfer_representation_space_count": 30,
+  "ground_representation_space_count": 30,
+  "representations_retained_per_branch": 2,
+  "representation_screening_rule": "Each branch evaluates every representation with exactly four fixed family-spanning proxies and ranks by the median proxy mean inner-CV RMSE.",
+  "screen_proxy_count_per_branch": 4,
+  "screen_score_aggregation": "median of four proxy mean inner-CV RMSE values",
+  "whole_representation_screen_families": [
+    "whole_pls",
+    "whole_elastic",
+    "whole_svr",
+    "whole_krr"
+  ],
+  "transfer_representation_screen_families": [
+    "epo_pls",
+    "epo_elastic",
+    "pooled_elastic",
+    "dipls"
+  ],
+  "ground_representation_screen_families": [
+    "ground_pls",
+    "ground_elastic",
+    "ground_svr",
+    "ground_krr"
+  ],
+  "ground_full_model_families": [
+    "ground_pls",
+    "ground_ridge",
+    "ground_elastic",
+    "ground_ipls",
+    "ground_svr",
+    "ground_krr",
+    "ground_pls_krr",
+    "ground_extratrees"
+  ],
+  "whole_full_model_families": [
+    "whole_pls",
+    "whole_ridge",
+    "whole_elastic",
+    "whole_ipls",
+    "whole_svr",
+    "whole_krr",
+    "whole_pls_krr",
+    "whole_extratrees"
+  ],
+  "transfer_full_model_families": [
+    "epo_pls",
+    "epo_elastic",
+    "pooled_elastic",
+    "dipls"
+  ],
+  "same_outer_and_inner_splits": true,
+  "outer_test_used_for_screening_or_tuning": false,
+  "ground_branch_depends_on_whole_selected_representation": false,
+  "transfer_branch_depends_on_whole_selected_representation": false
+}
