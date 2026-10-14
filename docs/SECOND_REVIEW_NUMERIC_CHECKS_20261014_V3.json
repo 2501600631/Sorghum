@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "independent_metric_groups": 600,
+  "independently_recalculated_metrics_per_group": 5,
+  "numeric_metric_values_checked": 3000,
+  "maximum_absolute_errors": {
+    "r2": 6.661338147750939e-16,
+    "rmse": 3.3306690738754696e-16,
+    "mae": 2.7755575615628914e-16,
+    "bias": 3.469446951953614e-16,
+    "rpd": 7.105427357601002e-15
+  },
+  "table1_all_values_match_input": true,
+  "table2_all_values_match_recomputed_metrics": true,
+  "815_audit_record_scope": "Elastic-net final fits only",
+  "actual_final_elastic_fit_rows": 815,
+  "selected_family_counts": {
+    "crude_protein": {
+      "whole": {
+        "whole_elastic": 40,
+        "whole_ridge": 8,
+        "whole_svr": 2
+      },
+      "assisted": {
+        "epo_elastic": 44,
+        "dipls": 5,
+        "epo_pls": 1
+      }
+    },
+    "moisture": {
+      "whole": {
+        "whole_extratrees": 20,
+        "whole_elastic": 11,
+        "whole_ridge": 10,
+        "whole_svr": 7,
+        "whole_pls": 2
+      },
+      "assisted": {
+        "epo_elastic": 35,
+        "epo_pls": 13,
+        "dipls": 2
+      }
+    },
+    "crude_ash": {
+      "whole": {
+        "whole_pls": 35,
+        "whole_ridge": 8,
+        "whole_elastic": 6,
+        "whole_svr": 1
+      },
+      "assisted": {
+        "epo_elastic": 26,
+        "epo_pls": 16,
+        "dipls": 8
+      }
+    },
+    "crude_fiber": {
+      "whole": {
+        "whole_extratrees": 19,
+        "whole_pls_krr": 12,
+        "whole_svr": 8,
+        "whole_ridge": 7,
+        "whole_elastic": 2,
+        "whole_ipls": 1,
+        "whole_pls": 1
+      },
+      "assisted": {
+        "epo_elastic": 25,
+        "dipls": 17,
+        "epo_pls": 8
+      }
+    }
+  },
+  "frozen_reference_values_changed": false
+}
