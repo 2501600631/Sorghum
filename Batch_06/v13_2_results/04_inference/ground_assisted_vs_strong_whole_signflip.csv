@@ -1,0 +1,5 @@
+target,method_a,method_b,observed_mean_mse_improvement_b_over_a,one_sided_p,n_inference_clusters,inference_cluster_column,permutations,role,holm_adjusted_p_nonprimary
+crude_protein,nested_strong_whole,nested_ground_assisted,0.007489736940540429,0.03859807009649518,98,inference_group,20000,primary,
+moisture,nested_strong_whole,nested_ground_assisted,0.007380297230080847,0.0016499175041247937,98,inference_group,20000,secondary,0.004949752512374381
+crude_ash,nested_strong_whole,nested_ground_assisted,-4.928339068611433e-05,0.6201689915504225,98,inference_group,20000,supportive,1.0
+crude_fiber,nested_strong_whole,nested_ground_assisted,-0.02133461698630782,0.9992500374981251,98,inference_group,20000,supportive,1.0

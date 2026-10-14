@@ -1,0 +1,9 @@
+{
+  "policy": "ElasticNet warnings are captured; deterministic retry is attempted; unresolved candidates are invalid and cannot enter selection.",
+  "inner_elastic_candidates_evaluated": 40800,
+  "inner_elastic_candidates_all_folds_converged": 40800,
+  "inner_elastic_candidates_invalid_or_nonconverged": 0,
+  "final_elastic_fits_recorded": 815,
+  "final_elastic_fits_converged": 815,
+  "unresolved_selected_final_fits": 0
+}

@@ -1,0 +1,15 @@
+{
+  "metadata_file": "sample_metadata_template.csv",
+  "metadata_file_present": true,
+  "source_group_status": "unverified_blank",
+  "cv_grouping_used": "sample_id",
+  "submission_warning": "source_group is blank. CV treats 98 user-declared independent samples as independent; complete provenance before submission if any samples share field/batch/material origin.",
+  "field_completeness_fraction": {
+    "independence_status": 1.0,
+    "source_group": 0.0,
+    "origin": 0.0,
+    "batch": 0.0,
+    "cultivar": 0.0,
+    "laboratory_record": 0.0
+  }
+}
