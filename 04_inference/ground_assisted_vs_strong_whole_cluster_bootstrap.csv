@@ -1,0 +1,5 @@
+target,method_a,method_b,observed_mse_improvement_b_over_a,mse_improvement_b_over_a_mean,ci_low,ci_high,bootstrap_repeats,inference_cluster_column,n_inference_clusters
+crude_protein,nested_strong_whole,nested_ground_assisted,0.007489736940540429,0.007489736940540429,-0.00018450986231984925,0.015783393041577665,2000,inference_group,98
+moisture,nested_strong_whole,nested_ground_assisted,0.007380297230080847,0.007380297230080847,0.002650238086113156,0.012371012776098231,2000,inference_group,98
+crude_ash,nested_strong_whole,nested_ground_assisted,-4.928339068611433e-05,-4.928339068611433e-05,-0.0003695324129110221,0.000247862183323898,2000,inference_group,98
+crude_fiber,nested_strong_whole,nested_ground_assisted,-0.02133461698630782,-0.02133461698630782,-0.03519205165156518,-0.00854033170426151,2000,inference_group,98
