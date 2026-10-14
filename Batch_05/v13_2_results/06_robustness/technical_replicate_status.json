@@ -1,0 +1,5 @@
+{
+  "status": "not_applicable",
+  "observations_per_sample_per_presentation": 1,
+  "reason": "98 independent samples; suffixes 1/2 are not technical replicates."
+}
