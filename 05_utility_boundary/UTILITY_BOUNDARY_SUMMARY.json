@@ -1,0 +1,27 @@
+{
+  "framework_version": "13.2.0-98",
+  "status": "completed",
+  "targets": [
+    "crude_protein",
+    "moisture",
+    "crude_ash",
+    "crude_fiber"
+  ],
+  "selective_grinding_is_exploratory": true,
+  "uncertainty_policy_uses_y_true_for_selection": false,
+  "uncertainty_definition": "SD across fixed whole-only family OOF predictions, ranked only among test samples produced by the same outer-fold fitted model",
+  "selection_scope": "within_outer_fold",
+  "oracle_uses_y_true": true,
+  "oracle_is_deployable": false,
+  "random_policy_repeats": 500,
+  "fractions": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    1.0
+  ],
+  "important_interpretation": "Retrospective OOF decision-policy simulation; not independent deployment validation."
+}
