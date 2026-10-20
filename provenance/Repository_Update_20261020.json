@@ -1,0 +1,32 @@
+{
+  "repository_package_version": "13.2.0-98-repository-2026-10-20",
+  "update_date": "2026-10-20",
+  "baseline_commit": "54d63d630d11daa65efcfc313b27192ee2b41947",
+  "baseline_package_version": "13.2.0-98-publication-2026-10-14-v3",
+  "baseline_files": 118,
+  "baseline_compared_with_author_reviewed_snapshot": true,
+  "baseline_path_size_and_git_blob_sha1_match": true,
+  "scope": "journal-independent documentation, metadata and verification entry points",
+  "stable_verification_entry_points": [
+    "verify_release.py",
+    "00_verify_release.bat"
+  ],
+  "compatible_legacy_entry_points": [
+    "verify_publication.py",
+    "00_publication_check.bat"
+  ],
+  "canonical_metadata_file": "DATASET_METADATA.json",
+  "compatible_legacy_metadata_file": "PUBLICATION_METADATA.json",
+  "raw_inputs_changed": false,
+  "experimental_data_changed": false,
+  "scientific_model_code_changed": false,
+  "figures_changed": false,
+  "frozen_results_changed": false,
+  "historical_receipts_changed": false,
+  "model_retraining": false,
+  "method_declarations_changed": false,
+  "historical_metadata_version_retained": "13.2.0-98-publication-2026-10-14-v3",
+  "license_added": false,
+  "doi_assigned": false,
+  "history": "Dated publication/submission filenames, profiles and receipts retain their historical meanings and paths."
+}

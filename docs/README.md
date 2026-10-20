@@ -1,3 +1,5 @@
-# Generated test receipts
+# Verification receipts
 
-The optional independent-sample regression test and algorithm-family self-test write their JSON receipts into this folder. The release verifier prints its result to standard output and does not modify any frozen result file.
+Dated receipts retain the state and scope of their original checks. References to local publication preparation describe those historical steps.
+
+The current `verify_release.py` command prints its report to standard output without changing files. Optional independent-sample and algorithm-family checks write their existing JSON receipts here; run them in a working copy.

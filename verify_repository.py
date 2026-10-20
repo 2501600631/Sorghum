@@ -38,7 +38,7 @@ def check_release_files():
         require(sha(ROOT / relative) == expected, 'Release checksum mismatch: ' + relative)
         count += 1
     for path in ROOT.rglob('*'):
-        if not path.is_file() or '__pycache__' in path.parts:
+        if not path.is_file() or '__pycache__' in path.parts or '.git' in path.parts:
             continue
         require(not HAN.search(path.relative_to(ROOT).as_posix()), 'Non-English filename: ' + path.name)
         if path.suffix in {'.py', '.json', '.csv', '.txt', '.md', '.bat', '.yml', '.cff', '.svg'} or path.name == '.gitignore':

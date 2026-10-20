@@ -8,7 +8,8 @@ sys.dont_write_bytecode = True
 import verify_repository as release
 
 ROOT = Path(__file__).resolve().parent
-VERSION = '13.2.0-98-publication-2026-10-14-v3'
+VERSION = '13.2.0-98-repository-2026-10-20'
+METHOD_METADATA_VERSION = '13.2.0-98-publication-2026-10-14-v3'
 TITLE = 'Paired sorghum spectra, reference composition and frozen nested-validation results for 98 samples'
 
 def require(condition, message):
@@ -23,7 +24,7 @@ def check_inventory_coverage():
     for line in (ROOT / 'SHA256SUMS.txt').read_text(encoding='utf-8').splitlines():
         if line:
             listed.append(line.split('  ', 1)[1])
-    actual = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name != 'SHA256SUMS.txt'}
+    actual = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file() and '__pycache__' not in p.parts and '.git' not in p.parts and p.name != 'SHA256SUMS.txt'}
     require(len(listed) == len(set(listed)), 'Duplicate release inventory entries')
     require(set(listed) == actual, 'Release inventory does not cover the exact package contents')
     return len(actual)
@@ -71,7 +72,7 @@ def check_publication_methods():
 
 def check_acquisition():
     row = read_json('experimental_data/spectral_acquisition_metadata_publication_20261014.json')
-    require(row['metadata_version'] == VERSION and row['confirmation_date'] == '2026-10-14', 'Acquisition metadata version')
+    require(row['metadata_version'] == METHOD_METADATA_VERSION and row['confirmation_date'] == '2026-10-14', 'Acquisition metadata version')
     for key, value in {'independent_samples': 98, 'ground_sieve_mesh': 40, 'ground_sieve_aperture_mm': 0.425, 'wavelength_start_nm': 400.0, 'wavelength_end_nm': 2499.5, 'wavelength_sampling_interval_nm': 0.5, 'wavelength_variables': 4200, 'internal_subscans_per_measurement': 32, 'independent_repackings_per_sample_per_form': 2, 'exported_spectra_per_sample_per_form': 1, 'modelling_grid_interval_nm': 2.0, 'modelling_grid_end_nm': 2498.0, 'modelling_grid_variables': 1050}.items():
         require(row[key] == value, 'Acquisition metadata mismatch: ' + key)
     require(row['measurement_mode'] == 'diffuse reflectance' and row['exported_spectral_scale'] == 'apparent absorbance', 'Acquisition scale or mode')
@@ -91,9 +92,11 @@ def check_preserved_research():
     return preservation['file_count']
 
 def check_citation():
-    metadata = read_json('PUBLICATION_METADATA.json')
-    require(metadata['publication_package_version'] == VERSION and metadata['dataset_title'] == TITLE, 'Package citation metadata')
-    require(metadata['status'] == 'local upload package' and metadata['public_upload_performed_by_this_revision'] is False, 'Publication status')
+    metadata = read_json('DATASET_METADATA.json')
+    require(read_json('PUBLICATION_METADATA.json') == metadata, 'Compatibility metadata mismatch')
+    require(metadata['repository_package_version'] == VERSION and metadata['publication_package_version'] == VERSION and metadata['dataset_title'] == TITLE, 'Package citation metadata')
+    require(metadata['journal_independent'] is True and metadata['target_journal'] is None, 'Repository scope')
+    require(metadata['scientific_framework_version'] == '13.2.0-98' and metadata['full_formal_search_rerun_in_this_revision'] is False, 'Scientific framework and revision scope')
     cff = (ROOT / 'CITATION.cff').read_text(encoding='utf-8')
     require('title: "' + TITLE + '"' in cff and 'version: "' + VERSION + '"' in cff, 'CFF citation mismatch')
     require(cff.count('family-names:') == 8, 'CFF author coverage')
@@ -112,7 +115,7 @@ def main():
     acquisition = check_acquisition()
     preserved = check_preserved_research()
     metadata = check_citation()
-    report = {'status': 'passed', 'scope': 'current local publication package', 'version': VERSION, 'dataset_title': TITLE, 'released_files_checked': checked, 'preserved_research_files_checked': preserved, 'samples': len(chemistry), 'reference_constituents': len(methods), 'reference_basis': 'as-is (wet)', 'nitrogen_to_protein_factor': 6.25, 'moisture_comparison_experiment_performed': methods['moisture']['oven_method_validation_completed'], 'independent_repackings_averaged_per_exported_spectrum': acquisition['independent_repackings_per_sample_per_form'], 'internal_subscans_per_measurement': acquisition['internal_subscans_per_measurement'], 'ground_sieve_aperture_mm': acquisition['ground_sieve_aperture_mm'], 'oof_rows': len(predictions), 'recomputed_repeat_metrics': len(metrics), 'inner_candidate_rows': candidates, 'historically_bound_code_and_config_files': bound, 'selective_inferential_comparisons': len(selective), 'raw_and_prepared_numeric_values_match': True, 'nested_split_isolation': True, 'current_author_confirmed_method_metadata': 'passed', 'historical_strict_metadata_scope': 'archived template fields; unchanged', 'raw_laboratory_measurements_included': False, 'individual_repacking_spectra_included': False, 'public_code_comments': 0, 'public_code_docstrings': 0, 'chinese_text_or_filenames': 0, 'external_validation': False, 'full_formal_refit_executed_for_this_release': False, 'public_upload_performed': metadata['public_upload_performed_by_this_revision']}
+    report = {'status': 'passed', 'scope': 'journal-independent repository package', 'version': VERSION, 'dataset_title': TITLE, 'journal_independent': metadata['journal_independent'], 'released_files_checked': checked, 'preserved_research_files_checked': preserved, 'samples': len(chemistry), 'reference_constituents': len(methods), 'reference_basis': 'as-is (wet)', 'nitrogen_to_protein_factor': 6.25, 'moisture_comparison_experiment_performed': methods['moisture']['oven_method_validation_completed'], 'independent_repackings_averaged_per_exported_spectrum': acquisition['independent_repackings_per_sample_per_form'], 'internal_subscans_per_measurement': acquisition['internal_subscans_per_measurement'], 'ground_sieve_aperture_mm': acquisition['ground_sieve_aperture_mm'], 'oof_rows': len(predictions), 'recomputed_repeat_metrics': len(metrics), 'inner_candidate_rows': candidates, 'historically_bound_code_and_config_files': bound, 'selective_inferential_comparisons': len(selective), 'raw_and_prepared_numeric_values_match': True, 'nested_split_isolation': True, 'current_author_confirmed_method_metadata': 'passed', 'historical_strict_metadata_scope': 'archived template fields; unchanged', 'raw_laboratory_measurements_included': False, 'individual_repacking_spectra_included': False, 'public_code_comments': 0, 'public_code_docstrings': 0, 'chinese_text_or_filenames': 0, 'external_validation': False, 'full_formal_refit_executed_for_this_release': False}
     print(json.dumps(report, indent=2))
 
 if __name__ == '__main__':
